@@ -4,95 +4,103 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="VOID">
 
-	<nav class="fixed top-0 h-auto z-20 w-screen grid place-items-start px-5 py-3 xl:place-items-center overflow-hidden">
+	<!-- <nav class="fixed top-0 h-auto z-20 w-screen grid place-items-start px-5 py-3 xl:place-items-center overflow-hidden">
 		<img src="/assets/logos/void_no_background.png" class="h-full w-full max-w-2xl filter"/>
-	</nav>
-		
-	<main class="w-auto md:w-full h-screen snap-mandatory snap-y overflow-y-scroll">
-		<section class="h-screen w-screen snap-center snap-always" id="1">
-			<!-- <video autoplay muted loop class="top-0 bottom-0 w-max" src="https://scontent.cdninstagram.com/o1/v/t16/f1/m82/EE48212F108F53F410B6FBE211947586_video_dashinit.mp4?efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uNDgwLmNsaXBzLmJhc2VsaW5lIn0&_nc_ht=instagram.feze14-2.fna.fbcdn.net&_nc_cat=109&vs=320441453661347_550747313&_nc_vs=HBksFQIYT2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfcHJvZC9FRTQ4MjEyRjEwOEY1M0Y0MTBCNkZCRTIxMTk0NzU4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVABgkR0pPUVR4TlFCcTdiVndVREFFSkxjSmN0b2k5Y2JwUjFBQUFGFQICyAEAKAAYABsAFQAAJuzQvq%2BLufc%2FFQIoAkMzLBdANCIMSbpeNRgSZGFzaF9iYXNlbGluZV8yX3YxEQB1%2FgcA&ccb=9-4&oh=00_AfC-wjg-knyGOlJzOwNXFltO_goZLOhHppkp4-bWNPO6Dw&oe=64EE192C&_nc_sid=fc8dfb"/> -->
-			<div class="flex w-screen h-screen snap-x snap-mandatory overflow-x-scroll">
-				<div class="w-screen h-screen flex-none snap-center snap-always flex justify-center xl:block overflow-hidden relative z-30" id="main">
-					<img class="max-w-max max-h-full md:max-h-max absolute z-10" src="/assets/images/353390406_1420332292062660_2800514742754278287_n.webp"/>
-					<img class="max-w-max max-h-full md:max-h-max absolute z-50" src="/public/assets/images/353390406_1420332292062660_2800514742754278287_n.png"/>
-				</div>
-				<div class="w-full h-screen flex-none snap-center snap-always flex justify-center xl:block overflow-hidden">
-					<img class="max-w-max max-h-full md:max-h-max" src="/public/assets/images/357374499_2510861919079671_3399235821380393263_n.webp"/>
-				</div>
-				<div class="w-full h-screen flex-none snap-center snap-always"></div>
+	</nav> -->
+	
+	<main class="w-screen h-screen relative overflow-hidden">
 
-			</div>
-		</section>
-		<section class="h-screen w-screen snap-center snap-always" id="2">
-			<div class="flex w-screen h-screen snap-x snap-mandatory overflow-x-scroll">
-				<div class="w-full h-screen bg-red-500 flex-none snap-center"></div>
-				<div class="w-full h-screen bg-blue-500 flex-none snap-center"></div>
-			</div>
-		</section>
-		<section class="h-screen w-screen bg-white snap-center snap-always py-20" id="3">
-			<iframe class="h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.5196015428614!2d-68.52776332403536!3d-31.537351802110113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140281b059031%3A0xbdafc7e302f74c9a!2sPlaza%2025%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1693491404878!5m2!1ses-419!2sar" allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<header class="grid place-items-center h-auto w-screen fixed top-0 z-20 p-2">
+			<img src="/assets/logos/void_no_background.png" class="h-auto w-full max-w-xl animate-fade animate-delay-[1500ms] animate-ease-linear" fetchpriority="high"/>
+		</header>
+
+		<div class="h-screen w-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden absolute keep-scrolling overscroll-none">
+
+			<section class="h-screen w-screen snap-center snap-always" id="1">
+				<div class="h-screen w-screen flex justify-center">
+					<!-- <img class="h-auto w-auto flex-none max-w-max max-h-full xl:max-w-full z-10 absolute" src="/public/assets/images/image1_bg.webp"/> -->
+					<img class="flex-none max-w-max max-h-full xl:max-w-full z-40 animate-fade-up animate-delay-1000 animate-ease-linear animate-duration-500" src="/assets/images/image1-nobg.webp"  fetchpriority="high"/>
+				</div>
+			</section>
+
+			<section class="h-screen w-screen snap-center snap-always" id="2">
+				<div class="h-screen w-screen flex justify-center relative">
+					<!-- <img class="h-auto w-auto flex-none max-w-max max-h-full xl:max-w-full z-10 absolute" src="/public/assets/images/image1_bg.webp"/> -->
+					<img class="h-auto w-auto flex-none max-w-max max-h-full xl:max-w-full z-50 absolute" src="/assets/images/image1-nobg.webp"/>
+				</div>
+			</section>
 			
-		</section>
-	</main>
+			<section class="h-screen w-screen snap-center snap-always" id="3">
+				<div class="h-screen w-screen flex justify-center relative">
+					<!-- <img class="h-auto w-auto flex-none max-w-max max-h-full xl:max-w-full z-10 absolute" src="/public/assets/images/image1_bg.webp"/> -->
+					<img class="h-auto w-auto flex-none max-w-max max-h-full xl:max-w-full z-50 absolute" src="/assets/images/image1-nobg.webp"/>
+				</div>
+			</section>
+		
+			<!-- <section class="h-screen w-screen bg-black snap-center snap-always py-20" id="3">
+				<iframe class="h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.5196015428614!2d-68.52776332403536!3d-31.537351802110113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140281b059031%3A0xbdafc7e302f74c9a!2sPlaza%2025%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1693491404878!5m2!1ses-419!2sar" allowfullscreen="true" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section> -->
+		</div>
 
-	<footer class="fixed h-20 w-full bottom-0 px-5 py-4 flex justify-between items-center filter invert">
+	</main>
+	
+	<footer class="fixed h-20 w-full z-50 bottom-0 xxs:px-0 xs:px-4 md:px-5 py-4 flex justify-between items-center filter invert">
 		<div class="w-auto h-auto flex items-center gap-2">
-			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out"><a href="https://www.instagram.com/madison.indumentaria" target="_blank"><img class="h-5 w-5" src="/assets/icons/instagram.webp" alt="instagram"/></a></button>
-			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out grid place-items-center"><img class="h-5 w-5" src="/assets/icons/facebook.webp" alt="facebook"/></button>
-			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out"><a href="https://api.whatsapp.com/send/?phone=542644105095&text=Hola!%20Necesito%20información.&type=phone_number&app_absent=0" target="_blank"><img class="h-5 w-5" src="/assets/icons/whatsapp.webp" alt="whatsapp"/></a></button>
+			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out grid place-items-center"><i class="fa-brands fa-facebook fa-lg"></i></button>
+			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out grid place-items-center"><a href="https://www.instagram.com/madison.indumentaria" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></button>
+			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out grid place-items-center"><a href="https://api.whatsapp.com/send/?phone=542644105095&text=Hola!%20Necesito%20información.&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp fa-lg"></i></button>
+			<button class="h-12 w-12 p-3 bg-[rgb(241,241,241)] rounded-full filter hover:invert active:scale-95 transition-all duration-150 ease-in-out grid place-items-center"><i class="fa-solid fa-location-dot fa-lg"></i></button>
 		</div>
 		<div class="w-auto h-auto"> 
-			<button class="h-12 w-auto p-3 bg-[rgb(241,241,241)] rounded-full font-bold">Tienda virtual</button>
+			<button class="h-12 w-auto py-3 px-5 bg-[rgb(241,241,241)] rounded-full font-bold filter hover:invert active:scale-95 transition-all duration-150 ease-in-out ">Tienda</button>
 		</div>
 	</footer>
 </Layout>
 
 <script>
-	const isInViewport = (element) => {
-    	const rect = element.getBoundingClientRect();
+	const isInViewport = (element: HTMLElement): boolean => {
+    	const rect: DOMRect = element.getBoundingClientRect()
 		return (
 			rect.top >= 0 &&
 			rect.left >= 0 &&
 			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
 			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-		);
+		)
 	}
 
-	const scroll = (i=2, time=5000) => {
-		if(i>3) return null
-		else{
-			setTimeout(() => {
-				document.getElementById( `${i}` ).scrollIntoView({
+	const sectionHasntBeenScrolled = (section: number): HTMLElement => {
+		const actualSection = document.getElementById(`${section}`)
+		const result = isInViewport(actualSection)
+		if(result) return actualSection 
+		else return null
+	}
+
+	const doScroll = (sectionId: number): void => {
+		setTimeout(()=>{
+			const actualSection:HTMLElement = sectionHasntBeenScrolled(sectionId)
+
+			if(actualSection){
+				const nextSection: HTMLElement = document.getElementById(`${sectionId+1}`)
+
+				nextSection.scrollIntoView({
 					behavior: 'smooth',
 					block: 'center',
 				})
-				console.log(`scroll to section ${i}`)
-				scroll(i+1, time+5000)
-			}, time)
-		}
+			}
+		},7000 + (5000 * (sectionId-1)))
 	}
 
-	const isInMap = () => {
-		const map = document.getElementById('3')
-		const result = isInViewport(map)
-		console.log(result)
-		if(result) map.style.display = "hidden"
+	for(let sectionId:number = 1; sectionId < 3; sectionId++) {
+		doScroll(sectionId)
 	}
 
-	isInMap()
-
-	// setTimeout(()=>{
-	// 	const main = document.getElementById('main')
-	// 	const result = isInViewport(main)
-	
-	// 	if(result) scroll()
-	// },10000)
 </script>
 
 <style>
-	section {
+	.section {
 		position: sticky;
 		position: -webkit-sticky;
 		top: 0;
+		z-index: 10;
 	}
 </style>

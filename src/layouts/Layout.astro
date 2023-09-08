@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="overflow-hidden">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
@@ -15,8 +15,9 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script src="https://kit.fontawesome.com/540880a85d.js" crossorigin="anonymous"></script>
 	</head>
-	<body class="keep-scrolling">
+	<body class="bg-general overscroll-none overflow-hidden">
 		<slot />
 	</body>
 </html>
@@ -30,5 +31,9 @@ const { title } = Astro.props;
 	.keep-scrolling {
 		-ms-overflow-style: none;  /* Internet Explorer and Edge */
 		scrollbar-width: none;  /* Firefox */
+	}
+
+	.bg-general {
+		background-color: rgb(195, 205, 215);
 	}
 </style>
